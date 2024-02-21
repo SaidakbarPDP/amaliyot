@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.amaliyot {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    background-color: #EF7903 ;
+    padding: 10px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.amaliyot::before{
+    content: "";
+    position: absolute;
+    left: -39px;
+    bottom: -1px;
+    display: inline-block;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #EF7903 ;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+.amaliyot::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%; 
+}
